@@ -6,7 +6,7 @@ CV:
 
 [![Google Scholar](64px-Google_Scholar_logo.svg.png "Google Scholar")](https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en)
 
-<img src="64px-Google_Scholar_logo.svg.png" width="48">
+<img src="64px-Google_Scholar_logo.svg.png" width="24">
 
 
 
