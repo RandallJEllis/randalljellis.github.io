@@ -2,7 +2,7 @@
 
 [randy.ellis@icahn.mssm.edu](mailto:randy.ellis@icahn.mssm.edu)
 
-[CV](https://randalljellis.github.io/incomplete_CV.pdf) &nbsp; <a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en"><img src="64px-Google_Scholar_logo.svg.png" width="30"></a> &nbsp; <a href="https://twitter.com/randalljellis"><img src="172px-Twitter_bird_logo_2012.svg.png" width="30"></a>
+[CV](https://randalljellis.github.io/incomplete_CV.pdf)&nbsp;<a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en"><img src="64px-Google_Scholar_logo.svg.png" width="30"></a>&nbsp;<a href="https://twitter.com/randalljellis"><img src="172px-Twitter_bird_logo_2012.svg.png" width="30"></a>
 
 
 
