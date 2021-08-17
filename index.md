@@ -2,7 +2,7 @@
 
 randy.ellis@icahn.mssm.edu
 
-[CV](incomplete_CV.pdf) 
+[CV](https://randalljellis.github.io/incomplete_CV.pdf) 
 
 [comment]: [![Google Scholar](64px-Google_Scholar_logo.svg.png "Google Scholar")](https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en)
 
