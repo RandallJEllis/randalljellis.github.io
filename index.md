@@ -1,7 +1,9 @@
 ![Randy Ellis, 2018](headshot_scaled8percent.jpg)
+
 randy.ellis@icahn.mssm.edu
 
-CV: [![Google Scholar](64px-Google_Scholar_logo.svg.png "Google Scholar")](https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en)
+CV: 
+[![Google Scholar](64px-Google_Scholar_logo.svg.png "Google Scholar")](https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en)
 
 
 
