@@ -1,4 +1,4 @@
-![Randy Ellis, 2018](headshot.jpg)
+![Randy Ellis, 2018](headshot.JPG)
 
 ## CURRENTLY
 I am a PhD Candidate in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32] (https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I work at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders. 
