@@ -16,7 +16,7 @@ From 2015-2017, I was a postbac in [Dr. Michael Michaelides’ lab](http://www.m
 
 In 2014, I graduated from Florida Atlantic University with a B.S. in Neuroscience & Behavior and a Minor in Psychology. While at FAU, I pursued research in coordination dynamics, neural circuits underlying cognitive behaviors, and the pharmacology of affective disorders. 
 
-#### Publications
+##### PUBLICATIONS
 1.	**Ellis, R. J.,** Rahman, T., Sherman, J. & Hurd, Y. L. [SnapShot: Neurobiology of opioid use disorder.](https://www.cell.com/cell/pdf/S0092-8674(21)00228-2.pdf) *Cell* **184**, 1648-1648.e1 (2021).
 2.	Suprun, M., **Ellis, R. J.,** Sampson, H. A. & Suárez-Fariñas, M. [bbeaR: an R package and framework for epitope-specific antibody profiling.](https://academic.oup.com/bioinformatics/article-abstract/37/1/131/6104853) *Bioinformatics* **37**, 131–133 (2021).
 3.	Egervari, G. et al. [Chromatin accessibility mapping of the striatum identifies tyrosine kinase FYN as a therapeutic target for heroin use disorder.](https://www.nature.com/articles/s41467-020-18114-3) *Nature Communications* **11**, 1–15 (2020).
