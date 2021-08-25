@@ -3,7 +3,7 @@
 [randy.ellis@icahn.mssm.edu](mailto:randy.ellis@icahn.mssm.edu)
 
 [CV](https://randalljellis.github.io/incomplete_CV.pdf)<br>
-<a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en">Google Scholar</a><br>
+<a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en"><img src="png-clipart-google-scholar-academic-journal-google-logo-education-google-text-trademark.png" style="width:42px;height:42px;"></a><br>
 <a href="https://twitter.com/randalljellis">Twitter</a><br>
 <a href="https://www.linkedin.com/in/randall-ellis-89b0a280/">LinkedIn</a>
 
