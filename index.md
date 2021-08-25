@@ -17,13 +17,13 @@ From 2015-2017, I was a postbac in [Dr. Michael Michaelides’ lab](http://www.m
 In 2014, I graduated from Florida Atlantic University with a B.S. in Neuroscience & Behavior and a Minor in Psychology. While at FAU, I pursued research in coordination dynamics, neural circuits underlying cognitive behaviors, and the pharmacology of affective disorders. 
 
 #### Publications
-1.	Ellis, R. J., Rahman, T., Sherman, J. & Hurd, Y. L. SnapShot: Neurobiology of opioid use disorder. Cell 184, 1648-1648.e1 (2021).
-2.	Suprun, M., Ellis, R. J., Sampson, H. A. & Suárez-Fariñas, M. bbeaR: an R package and framework for epitope-specific antibody profiling. Bioinformatics btaa1064 (2021) doi:10.1093/bioinformatics/btaa1064.
-3.	Egervari, G. et al. Chromatin accessibility mapping of the striatum identifies tyrosine kinase FYN as a therapeutic target for heroin use disorder. Nature Communications 11, 1–15 (2020).
-4.	Gomez, J. L. et al. Zinc potentiates dopamine neurotransmission and cocaine seeking. bioRxiv 2020.08.29.273482 (2020) doi:10.1101/2020.08.29.273482.
-5.	Ellis, R. J., Wang, Z., Genes, N. & Ma’ayan, A. Predicting opioid dependence from electronic health records with machine learning. BioData Mining 12, 3 (2019).
-6.	Michaelides, M. et al. Striatal Rgs4 regulates feeding and susceptibility to diet-induced obesity. Molecular Psychiatry 1–12 (2018) doi:10.1038/s41380-018-0120-7
-7.	Ellis, R. J. & Michaelides, M. High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses. bioRxiv 271296 (2018) doi:10.1101/271296.
-8.	Ellis, R. J., Michaelides, M. & Wang, G.-J. [Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang). in Processed Food Addiction: Foundations, Assessment, and Recovery (CRC Press, 2017).
-9.	Gomez, J. L. et al. [Chemogenetics revealed: DREADD occupancy and activation via converted clozapine](http://science.sciencemag.org/content/357/6350/503). Science 357, 503–507 (2017).	
+1.	Ellis, R. J., Rahman, T., Sherman, J. & Hurd, Y. L. [SnapShot: Neurobiology of opioid use disorder.](https://www.cell.com/cell/pdf/S0092-8674(21)00228-2.pdf) Cell 184, 1648-1648.e1 (2021).
+2.	Suprun, M., Ellis, R. J., Sampson, H. A. & Suárez-Fariñas, M. [bbeaR: an R package and framework for epitope-specific antibody profiling.](https://academic.oup.com/bioinformatics/article-abstract/37/1/131/6104853) Bioinformatics btaa1064 (2021) doi:10.1093/bioinformatics/btaa1064.
+3.	Egervari, G. et al. [Chromatin accessibility mapping of the striatum identifies tyrosine kinase FYN as a therapeutic target for heroin use disorder.](https://www.nature.com/articles/s41467-020-18114-3) Nature Communications 11, 1–15 (2020).
+4.	Gomez, J. L. et al. [Zinc potentiates dopamine neurotransmission and cocaine seeking.](https://www.biorxiv.org/content/10.1101/2020.08.29.273482v1.abstract) bioRxiv 2020.08.29.273482 (2020) doi:10.1101/2020.08.29.273482.
+5.	Ellis, R. J., Wang, Z., [Genes, N. & Ma’ayan, A. Predicting opioid dependence from electronic health records with machine learning.](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-019-0193-0) BioData Mining 12, 3 (2019).
+6.	Michaelides, M. et al. [Striatal Rgs4 regulates feeding and susceptibility to diet-induced obesity.](https://www.nature.com/articles/s41380-018-0120-7) Molecular Psychiatry 1–12 (2018) doi:10.1038/s41380-018-0120-7
+7.	Ellis, R. J. & Michaelides, M. [High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses.](https://www.biorxiv.org/content/10.1101/271296v1.abstract) bioRxiv 271296 (2018) doi:10.1101/271296.
+8.	Ellis, R. J., Michaelides, M. & Wang, G.-J. [Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging.](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang) in Processed Food Addiction: Foundations, Assessment, and Recovery (CRC Press, 2017).
+9.	Gomez, J. L. et al. [Chemogenetics revealed: DREADD occupancy and activation via converted clozapine.](http://science.sciencemag.org/content/357/6350/503) Science 357, 503–507 (2017).	
 
