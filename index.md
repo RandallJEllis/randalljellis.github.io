@@ -4,8 +4,8 @@
 
 [CV](https://randalljellis.github.io/incomplete_CV.pdf)
 <a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en"><img src="google-scholar.png" style="width:30px;height:30px;"></a>
-<a href="https://twitter.com/randalljellis">Twitter</a>
-<a href="https://www.linkedin.com/in/randall-ellis-89b0a280/">LinkedIn</a>
+<a href="https://twitter.com/randalljellis"><img src="logo (6).png" style="width:30px;height:30px;"></a>
+<a href="https://www.linkedin.com/in/randall-ellis-89b0a280/"><img src="image (1).png" style="width:30px;height:30px;"></a>
 
 <br>
 
