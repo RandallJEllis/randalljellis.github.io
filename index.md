@@ -22,7 +22,8 @@ In 2014, I graduated from Florida Atlantic University with a B.S. in Neuroscienc
 3.	Egervari, G. et al. Chromatin accessibility mapping of the striatum identifies tyrosine kinase FYN as a therapeutic target for heroin use disorder. Nature Communications 11, 1–15 (2020).
 4.	Gomez, J. L. et al. Zinc potentiates dopamine neurotransmission and cocaine seeking. bioRxiv 2020.08.29.273482 (2020) doi:10.1101/2020.08.29.273482.
 5.	Ellis, R. J., Wang, Z., Genes, N. & Ma’ayan, A. Predicting opioid dependence from electronic health records with machine learning. BioData Mining 12, 3 (2019).
-6.	Michaelides, M. et al. Striatal Rgs4 regulates feeding and susceptibility to diet-induced obesity. Molecular Psychiatry 1–12 (2018) doi:10.1038/s41380-018-0120-7.  Ellis, R. J. & Michaelides, M. High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses. bioRxiv 271296 (2018) doi:10.1101/271296.
-8.	Ellis, R. J., Michaelides, M. & Wang, G.-J. Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging. in Processed Food Addiction: Foundations, Assessment, and Recovery (CRC Press, 2017).
-9.	Gomez, J. L. et al. Chemogenetics revealed: DREADD occupancy and activation via converted clozapine. Science 357, 503–507 (2017).	
+6.	Michaelides, M. et al. Striatal Rgs4 regulates feeding and susceptibility to diet-induced obesity. Molecular Psychiatry 1–12 (2018) doi:10.1038/s41380-018-0120-7
+7.	Ellis, R. J. & Michaelides, M. High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses. bioRxiv 271296 (2018) doi:10.1101/271296.
+8.	Ellis, R. J., Michaelides, M. & Wang, G.-J. [Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang). in Processed Food Addiction: Foundations, Assessment, and Recovery (CRC Press, 2017).
+9.	Gomez, J. L. et al. [Chemogenetics revealed: DREADD occupancy and activation via converted clozapine](http://science.sciencemag.org/content/357/6350/503). Science 357, 503–507 (2017).	
 
