@@ -3,7 +3,7 @@
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
