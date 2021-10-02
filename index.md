@@ -1,11 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+  
 ![Randy Ellis, 2018](headshot_scaled8percent.jpg)
 
 [randy.ellis@icahn.mssm.edu](mailto:randy.ellis@icahn.mssm.edu)
 
 ## [CV](https://randalljellis.github.io/Ellis_Randall_CV.pdf)<br>
-<a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en">Google Scholar</a><br>
-<a href="https://twitter.com/randalljellis">Twitter</a><br>
-<a href="https://www.linkedin.com/in/randall-ellis-89b0a280/">LinkedIn</a>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://twitter.com/randalljellis" class="fa fa-twitter"></a>
+<a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/randall-ellis-89b0a280/" class="fa fa-linkedin"></a>
+
+
+
 
 <br>
 
@@ -29,4 +78,7 @@ In 2014, I graduated from Florida Atlantic University with a B.S. in Neuroscienc
 7.	**Ellis, R. J.** & Michaelides, M. [High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses.](https://www.biorxiv.org/content/10.1101/271296v1.abstract) *bioRxiv* 271296 (2018).
 8.	**Ellis, R. J.,** Michaelides, M. & Wang, G.-J. [Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging.](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang) in *Processed Food Addiction: Foundations, Assessment, and Recovery* (CRC Press, 2017).
 9.	Gomez, J. L. et al. [Chemogenetics revealed: DREADD occupancy and activation via converted clozapine.](http://science.sciencemag.org/content/357/6350/503) *Science* **357**, 503–507 (2017).	
+
+</body>
+</html> 
 
