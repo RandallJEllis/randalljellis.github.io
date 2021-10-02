@@ -7,7 +7,7 @@
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
 .fa:hover {
