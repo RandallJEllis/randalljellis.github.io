@@ -38,7 +38,6 @@
 
 </style>
 </head>
-<body>
   
 ![Randy Ellis, 2018](headshot_scaled8percent.jpg)
 
@@ -79,6 +78,5 @@ In 2014, I graduated from Florida Atlantic University with a B.S. in Neuroscienc
 8.	**Ellis, R. J.,** Michaelides, M. & Wang, G.-J. [Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging.](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang) in *Processed Food Addiction: Foundations, Assessment, and Recovery* (CRC Press, 2017).
 9.	Gomez, J. L. et al. [Chemogenetics revealed: DREADD occupancy and activation via converted clozapine.](http://science.sciencemag.org/content/357/6350/503) *Science* **357**, 503–507 (2017).	
 
-</body>
-</html> 
+
 
