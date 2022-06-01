@@ -46,7 +46,7 @@
 <!-- Add font awesome icons -->
 <a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en" class="fa fa-google"></a>
 <a href="https://twitter.com/randalljellis" class="fa fa-twitter"></a>
-<a href="https://www.linkedin.com/in/randall-ellis-89b0a280/" class="fa fa-linkedin"></a>
+<a href="https://www.linkedin.com/in/randalljellis/" class="fa fa-linkedin"></a>
 
 
 
