@@ -1,4 +1,4 @@
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 
 title: Randy Ellis
 description: PhD from Mount Sinai studying the behavioral, clinical, and molecular underpinnings of opioid use disorder
