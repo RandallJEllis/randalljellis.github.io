@@ -35,7 +35,7 @@
 
 </style>
   
-![Randy Ellis, 2018](headshot_scaled8percent.jpg)
+![Randy Ellis, 2018](headshot_CURRENT.png)
 
 [randall.ellis@tufts.edu](mailto:randall.ellis@tufts.edu)
 
