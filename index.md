@@ -38,6 +38,7 @@
 ![Randy Ellis, 2018](headshot_scaled8percent.jpg)
 
 [randall.ellis@tufts.edu](mailto:randall.ellis@tufts.edu)
+
 [CV](https://randalljellis.github.io/Ellis_Randy_CV_public.pdf)<br>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
