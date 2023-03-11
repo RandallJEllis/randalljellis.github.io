@@ -49,8 +49,6 @@
 <a href="https://www.linkedin.com/in/randalljellis/" class="fa fa-linkedin"></a>
 
 
-
-
 <br>
 
 ##### CURRENTLY
