@@ -57,7 +57,7 @@
 I am currently a Postdoctoral Fellow in [Dr. Michael Levin's lab](https://www.drmichaellevin.org/) at Tufts University.  
 
 ##### PREVIOUSLY 
-In 2022, earned my PhD in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32](https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I worked at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders.
+In 2022, I earned my PhD in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32](https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I worked at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders.
 
 From 2017-2018, I was a rotation student in [Dr. Avi Ma’ayan’s lab](https://labs.icahn.mssm.edu/maayanlab/) and developed machine learning algorithms to [predict diagnosis of substance use disorders](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-019-0193-0) using electronic medical records. 
 
