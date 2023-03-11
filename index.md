@@ -37,7 +37,7 @@
   
 ![Randy Ellis, 2018](headshot_scaled8percent.jpg)
 
-[randy.ellis@icahn.mssm.edu](mailto:randy.ellis@icahn.mssm.edu)
+[randall.ellis@tufts.edu](mailto:randall.ellis@tufts.edu)
 
 ## [CV](https://randalljellis.github.io/Ellis_Randy_CV_public.pdf)<br>
 <!-- Add icon library -->
@@ -54,9 +54,11 @@
 <br>
 
 ##### CURRENTLY
-I earned my PhD in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32](https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I work at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders. 
+I am currently a Postdoctoral Fellow in [Dr. Michael Levin's lab](https://www.drmichaellevin.org/) at Tufts University.  
 
 ##### PREVIOUSLY 
+In 2022, earned my PhD in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32](https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I worked at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders.
+
 From 2017-2018, I was a rotation student in [Dr. Avi Ma’ayan’s lab](https://labs.icahn.mssm.edu/maayanlab/) and developed machine learning algorithms to [predict diagnosis of substance use disorders](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-019-0193-0) using electronic medical records. 
 
 From 2015-2017, I was a postbac in [Dr. Michael Michaelides’ lab](http://www.michaelideslab.org/) at the National Institute on Drug Abuse on an [Intramural Research Training Award](https://www.training.nih.gov/programs/postbac_irta). In Dr. Michaelides' lab I worked on a variety of projects including the [decoding of natural scenes](https://www.biorxiv.org/content/10.1101/271296v1.abstract) from calcium imaging data curated by the [Allen Institute](https://observatory.brain-map.org/visualcoding/), designer receptor activated by designer drug (DREADD) [actuator metabolism](https://science.sciencemag.org/content/357/6350/503.abstract), the [effects of zinc](https://www.biorxiv.org/content/10.1101/2020.08.29.273482v1.abstract) on cocaine-seeking, the effects of obesity on [GPCR signaling](https://www.nature.com/articles/s41380-018-0120-7) in striatonigral and striatopallidal medium spiny neurons, and a chapter on [neuroimaging similarities](https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang) between substance use and overeating disorders. 
