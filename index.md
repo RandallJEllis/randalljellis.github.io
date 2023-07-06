@@ -52,7 +52,7 @@
 <br>
 
 ##### CURRENTLY
-I am currently a Postdoctoral Fellow in [Dr. Michael Levin's lab](https://www.drmichaellevin.org/) at Tufts University.  
+I am currently a Postdoctoral Fellow in [Dr. Michael Levin's lab](https://as.tufts.edu/biology/levin-lab) at Tufts University.  
 
 ##### PREVIOUSLY 
 In 2022, I earned my PhD in [Dr. Yasmin Hurd’s lab](http://labs.neuroscience.mssm.edu/project/hurd-lab/) at the Icahn School of Medicine at Mount Sinai, supported by [F31](https://researchtraining.nih.gov/programs/fellowships/f31) (NIDA) and [T32](https://researchtraining.nih.gov/programs/training-grants/t32) (NIGMS) National Research Service Awards. I worked at the interface of genomics, machine learning, and behavioral neuroscience to understand the molecular underpinnings of substance use disorders.
