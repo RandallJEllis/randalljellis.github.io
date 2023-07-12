@@ -35,7 +35,7 @@
 
 </style>
   
-![Randy Ellis, 2018](headshot.jpeg)
+![Randy Ellis, 2023](headshot.jpeg)
 
 [randall.ellis@tufts.edu](mailto:randall.ellis@tufts.edu)
 
