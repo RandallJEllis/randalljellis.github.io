@@ -37,7 +37,7 @@
   
 ![Randy Ellis, 2023](headshot.jpeg)
 
-[randall.ellis@tufts.edu](mailto:randall.ellis@tufts.edu)
+[randall_ellis@hms.harvard.edu](mailto:randall_ellis@hms.harvard.edu)
 
 [CV](https://randalljellis.github.io/Ellis_Randy_CV_public.pdf)<br>
 <!-- Add icon library -->
