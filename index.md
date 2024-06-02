@@ -52,7 +52,7 @@
 <br>
 
 ##### CURRENTLY
-I am currently a Postdoctoral Fellow in [Chirag Patel's lab](https://www.chiragjpgroup.org/) in the [Department of Biomedical Informatics](https://dbmi.hms.harvard.edu/) at Harvard Medical School working on neurodegenerative disease using human biobank data including brain imaging, electronic health records, genomics, and methods from maching learning and statistical modeling. 
+I am currently a Postdoctoral Fellow in [Chirag Patel's lab](https://www.chiragjpgroup.org/) in the [Department of Biomedical Informatics](https://dbmi.hms.harvard.edu/) at Harvard Medical School working on neurodegenerative disease using human biobank data including brain imaging, electronic health records, genomics, and methods from machine learning and statistical modeling. 
 
 ##### PREVIOUSLY 
 In 2023, I spent 8 months as a Postdoctoral Fellow in [Michael Levin's lab](https://as.tufts.edu/biology/levin-lab) at Tufts University working on single-cell genomics and calcium imaging analysis. 
