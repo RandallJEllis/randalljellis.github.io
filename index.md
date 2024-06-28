@@ -35,7 +35,7 @@
 
 </style>
   
-![Randy Ellis, 2023](headshot.jpeg)
+![Randy Ellis, 2023](headshot_small.png)
 
 [Email](mailto:randall_ellis@hms.harvard.edu)
 
