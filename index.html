@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Randy Ellis, PhD | Postdoctoral Fellow at Harvard Medical School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      overflow-x: hidden;
+    }
+    
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      padding: 1rem 2rem;
+      text-align: center;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    
+    nav a {
+      color: #64748b;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-weight: 500;
+      font-family: 'Space Grotesk', sans-serif;
+      position: relative;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover {
+      color: #1e293b;
+      transform: translateY(-1px);
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(59,130,246,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+    
+    header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin: 0;
+      background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+    
+    .subtitle {
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      margin: 1rem 0 2rem;
+      font-weight: 400;
+      color: #64748b;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeInUp 1s ease 0.4s both;
+    }
+    
+    header p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      max-width: 700px;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      font-weight: 400;
+      color: #64748b;
+      animation: fadeInUp 1s ease 0.6s both;
+    }
+    
+    .headshot {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      border: 4px solid rgba(59,130,246,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease 0s both;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease 0.1s both;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.9);
+      border: 2px solid rgba(59,130,246,0.2);
+      border-radius: 50%;
+      color: #64748b;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+    }
+    
+    .social-link:hover {
+      background: #3b82f6;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(59,130,246,0.3);
+      border-color: #3b82f6;
+    }
+    
+    .social-link.google-scholar:hover {
+      background: #4285f4;
+      border-color: #4285f4;
+    }
+    
+    .social-link.linkedin:hover {
+      background: #0077b5;
+      border-color: #0077b5;
+    }
+    
+    .social-link.email:hover {
+      background: #ea4335;
+      border-color: #ea4335;
+    }
+    
+    .social-link.cv:hover {
+      background: #059669;
+      border-color: #059669;
+    }
+    
+    .publications-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: publication-counter;
+    }
+    
+    .publications-list li {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      position: relative;
+      counter-increment: publication-counter;
+      transition: all 0.3s ease;
+    }
+    
+    .publications-list li:hover {
+      background: rgba(255,255,255,0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(59,130,246,0.1);
+    }
+    
+    .publications-list li::before {
+      content: counter(publication-counter);
+      position: absolute;
+      left: -0.5rem;
+      top: 0.5rem;
+      background: #3b82f6;
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .publication-authors {
+      color: #64748b;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    
+    .publication-title {
+      color: #1e293b;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    
+    .publication-title a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    
+    .publication-title a:hover {
+      text-decoration: underline;
+    }
+    
+    .publication-journal {
+      color: #059669;
+      font-style: italic;
+      font-weight: 500;
+    }
+    
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+    
+    .scroll-indicator::after {
+      content: '↓';
+      font-size: 1.5rem;
+      color: #3b82f6;
+    }
+    
+    section {
+      padding: 8rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100px;
+      background: linear-gradient(to bottom, transparent, #3b82f6, transparent);
+      transform: translateX(-50%);
+    }
+    
+    section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: #1e293b;
+      letter-spacing: -1px;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+      border-radius: 2px;
+    }
+    
+    .project, .service {
+      margin-bottom: 2rem;
+      padding: 2.5rem;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+    }
+    
+    .project::before, .service::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+      transition: left 0.5s ease;
+    }
+    
+    .project:hover, .service:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.95);
+      border-color: rgba(59,130,246,0.3);
+      box-shadow: 0 20px 40px rgba(59,130,246,0.15);
+    }
+    
+    .project:hover::before, .service:hover::before {
+      left: 100%;
+    }
+    
+    .project h3 {
+      color: #3b82f6;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    
+    .project p {
+      color: #475569;
+      line-height: 1.6;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .service {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #475569;
+    }
+    
+    .service::before {
+      content: '✓';
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+    
+    form {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    input, textarea {
+      padding: 1.25rem;
+      border: 2px solid rgba(0,0,0,0.1);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.9);
+      color: #1e293b;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    input::placeholder, textarea::placeholder {
+      color: rgba(100,116,139,0.7);
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      background: rgba(255,255,255,1);
+      box-shadow: 0 0 20px rgba(59,130,246,0.15);
+    }
+    
+    button {
+      background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+      color: #fff;
+      border: none;
+      padding: 1.25rem 2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(59,130,246,0.3);
+    }
+    
+    button:hover::before {
+      left: 100%;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-family: 'Inter', sans-serif;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.8);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 1rem;
+        font-size: 0.9rem;
+      }
+      
+      section {
+        padding: 5rem 1.5rem;
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .project, .service {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#background">Background</a>
+    <a href="#projects">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="about">
+    <img src="headshot_glow.png" alt='Randy Ellis, PhD' class="headshot">
+    
+    <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=LwXbZDcAAAAJ&hl=en" class="social-link google-scholar" target="_blank" aria-label="Google Scholar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5s-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/randalljellis/" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <a href="mailto:randall_ellis@hms.harvard.edu" class="social-link email" aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+      <a href="https://randalljellis.github.io/Ellis_Randy_CV_public.pdf" class="social-link cv" target="_blank" aria-label="Download CV">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <h1>Randy Ellis, PhD</h1>
+    <div class="subtitle">Postdoctoral Fellow at Harvard Medical School</div>
+    <p>Currently working on neurodegenerative disease using human biobank data including blood biomarkers, proteomics, genomics, electronic health records, and methods from machine learning and statistical modeling in the Department of Biomedical Informatics.</p>
+    <div class="scroll-indicator"></div>
+  </header>
+
+  <section id="background">
+    <h2>Background</h2>
+    
+    <div class="project">
+      <h3>Currently</h3>
+      <p>I am currently a Postdoctoral Fellow in 
+        <a href="https://www.chiragjpgroup.org/" style="color: #3b82f6;">
+          Chirag Patel's lab
+        </a> in the 
+        <a href="https://dbmi.hms.harvard.edu/" style="color: #3b82f6;">
+          Department of Biomedical Informatics
+        </a> at Harvard Medical School working on neurodegenerative disease using 
+        human biobank data including blood biomarkers (e.g., pTau-217), amyloid-PET 
+        and other types of brain imaging, cerebrospinal fluid, genomics, 
+        <a href="https://arxiv.org/abs/2411.10574" style="color: #3b82f6;">
+          proteomics</a>, electronic health records, and methods from machine learning and 
+        statistical modeling.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Previous Experience</h3>
+      <p><strong>Tufts University (2023):</strong> Postdoctoral Fellow in 
+        <a href="https://as.tufts.edu/biology/levin-lab" style="color: #3b82f6;">
+          Michael Levin's lab
+        </a> working on single-cell genomics and calcium imaging analysis.
+      </p>
+      
+      <p><strong>Icahn School of Medicine at Mount Sinai (2022):</strong> Earned PhD in 
+        <a href="http://labs.neuroscience.mssm.edu/project/hurd-lab/" 
+           style="color: #3b82f6;">
+          Yasmin Hurd's lab</a>, supported by 
+        <a href="https://researchtraining.nih.gov/programs/fellowships/f31" 
+           style="color: #3b82f6;">
+          F31
+        </a> (NIDA) and 
+        <a href="https://researchtraining.nih.gov/programs/training-grants/t32" 
+           style="color: #3b82f6;">
+          T32
+        </a> (NIGMS) National Research Service Awards. Worked at the interface of 
+        genomics, machine learning, and behavioral neuroscience to understand the 
+        
+           molecular underpinnings of 
+       <a href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(24)01815-8/abstract" 
+           style="color: #3b82f6;">opioid use disorder</a>. I also wrote a <a href="https://www.cell.com/cell/fulltext/S0092-8674(21)00228-2" 
+           style="color: #3b82f6;">snapshot</a> on opioid abuse neurobiology, 
+           studied the effects of 
+           <a href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(21)01629-2/fulltext" 
+           style="color: #3b82f6;">prenatal cannabis exposure</a> on motivation and the epigenetics of the nucleus accumbens, and published essays on the 
+           <a href="https://www.eneuro.org/content/9/4/ENEURO.0017-22.2022" 
+           style="color: #3b82f6;">intersection of metascience and neuroscience</a> and 
+           <a href="https://www.sciencedirect.com/science/article/pii/S2666521222000217" 
+           style="color: #3b82f6;">common pitfalls of clinical machine learning</a>.
+          
+        <br>
+        <p>From 2017-2018, I was a rotation student in <a href="https://labs.icahn.mssm.edu/maayanlab/">Avi Ma’ayan’s lab</a> and developed machine learning algorithms to <a href="https://biodatamining.biomedcentral.com/articles/10.1186/s13040-019-0193-0">predict diagnosis of substance use disorders</a> using electronic medical records.</p>
+      </p>
+
+      <p><strong>National Institute on Drug Abuse (2015-2017):</strong> Postbac in
+        <a href="https://irp.nida.nih.gov/staff-members/mike-michaelides/" style="color: #3b82f6;">
+          Michael Michaelides' lab
+        </a> on an 
+        <a href="https://www.training.nih.gov/programs/postbac_irta" 
+           style="color: #3b82f6;">
+          Intramural Research Training Award</a>. Worked on projects including the 
+        <a href="https://www.biorxiv.org/content/10.1101/271296v1.abstract" 
+           style="color: #3b82f6;">
+          decoding of natural scenes
+        </a> from calcium imaging data curated by the <a href="https://observatory.brain-map.org/visualcoding/">Allen Institute</a>,
+        DREADD 
+        <a href="https://science.sciencemag.org/content/357/6350/503.abstract" 
+           style="color: #3b82f6;">
+          actuator metabolism</a>, the <a href="https://www.biorxiv.org/content/10.1101/2020.08.29.273482v1.abstract">effects of zinc on on cocaine-seeking</a>, 
+          the <a href="https://www.nature.com/articles/s41380-018-0120-7">effects of obesity on GPCR signaling in the striatum</a>, 
+          and a textbook chapter on <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang">neuroimaging similarities</a> between substance use and overeating disorders.</p>
+      </p>
+
+
+      
+      <p><strong>Florida Atlantic University (2014):</strong> B.S. in Neuroscience & 
+        Behavior with Minor in Psychology. Pursued research in coordination dynamics in 
+        <a href="https://ccs.fau.edu/hbblab/index.php" style="color: #3b82f6;">
+          J. A. Scott Kelso's lab
+        </a> and neural circuits underlying cognitive behaviors in 
+        <a href="https://psy.fau.edu/people/vertes.php" style="color: #3b82f6;">
+          Robert Vertes' lab
+        </a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Research</h2>
+    <div class="project">
+      <h3>Using random feature baselines as performance benchmarks for -omic machine learning</h3>
+      <p>In high-dimensional data settings, we propose randomly chosen feature sets of varying sizes as simple and effective benchmarks for evaluating the performance of data-driven machine learning models.
+        <br><a href="https://arxiv.org/abs/2411.10574" style="color: #3b82f6;">View Publication →</a></p>
+    </div>
+    <div class="project">
+      <h3>Machine learning-based identification of translational targets of opioid use disorder</h3>
+      <p>Identified Shisa7 as a novel biomarker for opioid use disorder via a machine learning approach with human brain RNA-seq and validated it in a translational rodent model.
+        <br><a href="https://www.sciencedirect.com/science/article/abs/pii/S0006322324018158" style="color: #3b82f6;">View Publication →</a></p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol class="publications-list">
+      <li>
+        <div class="publication-authors">Isaac, S.K., <strong>Ellis, R.J.</strong>, Gusev, A., Murthy, V.L., Udler, M.S. and Patel, C.J.</div>
+        <div class="publication-title"><a href="https://www.medrxiv.org/content/10.1101/2025.05.07.25327178v1">Human Plasma Proteomics Links Modifiable Lifestyle Exposome to Disease Risk.</a></div>
+        <div class="publication-journal">medRxiv, 2025</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R.J.</strong>, Ferland, J.M.N., Rahman, T., Landry, J.L., Callens, J.E., Pandey, G., Lam, T., Kanyo, J., Nairn, A.C., Dracheva, S. and Hurd, Y.L.</div>
+        <div class="publication-title"><a href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(24)01815-8/abstract">Machine learning analysis of the orbitofrontal cortex transcriptome of human opioid users identifies Shisa7 as a translational target relevant for heroin-seeking leveraging a male rat model.</a></div>
+        <div class="publication-journal">Biological Psychiatry, 2024</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.</strong>, Airaud, A., Patel, C. J.</div>
+        <div class="publication-title"><a href="https://arxiv.org/abs/2411.10574">Random feature baselines provide distributional performance and feature selection benchmarks for clinical and 'omic machine learning</a></div>
+        <div class="publication-journal">Machine Learning For Health (ML4H), 2024</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Luo, R., Zeraatkar, D., Glymour, M., <strong>Ellis, R. J.</strong>, Estiri, H., Patel, C. J.</div>
+        <div class="publication-title"><a href="https://link.springer.com/article/10.1186/s12916-024-03424-w">Specification curve analysis to identify heterogeneity in risk factors for dementia: findings from the UK Biobank</a></div>
+        <div class="publication-journal">BMC Medicine, 2024</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Ferland, J. M. N., <strong>Ellis, R. J.</strong>, Betts, G., Silveira, M. M., de Firmino, J. B., Winstanley, C. A., & Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2799065">Long-Term Outcomes of Adolescent THC Exposure on Translational Cognitive Measures in Adulthood in an Animal Model and Computational Assessment of Human Data.</a></div>
+        <div class="publication-journal">JAMA Psychiatry, 2023</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.</strong></div>
+        <div class="publication-title"><a href="https://www.eneuro.org/content/9/4/ENEURO.0017-22.2022">Questionable Research Practices, Low Statistical Power, and Other Obstacles to Replicability: Why Preclinical Neuroscience Research Would Benefit from Registered Reports.</a></div>
+        <div class="publication-journal">eNeuro, 2022</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.</strong>, Sander, R. M., Limon, A.</div>
+        <div class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S2666521222000217">Twelve key challenges in medical machine learning and solutions.</a></div>
+        <div class="publication-journal">Intelligence-Based Medicine, 2022</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Ferland, J.-M. N., <strong>Ellis, R. J.</strong>, Rompala, G., Landry, J. A., Callens, J. E., Ly, A., Frier, M. D., Uzamere, T. O., Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://www.nature.com/articles/s41380-022-01467-0">Dose mediates the protracted effects of adolescent THC exposure on reward and stress reactivity in males relevant to perturbation of the basolateral amygdala transcriptome.</a></div>
+        <div class="publication-journal">Molecular Psychiatry, 2022</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.*</strong>, Bara, A.*, Vargas, C. A.*, Frick, A. L., Loh, E., Landry, J., Uzamere, T. O., Callens, J. E., Martin, Q., Rajarajan, P., Brennand, K., Ramakrishnan, A., Shen, L., Szutorisz, H. & Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(21)01629-2/fulltext">Prenatal Δ9-tetrahydrocannabinol exposure in males leads to motivational disturbances related to striatal epigenetic dysregulation.</a></div>
+        <div class="publication-journal">Biological Psychiatry, 2021</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.,</strong> Rahman, T., Sherman, J. & Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://www.cell.com/cell/fulltext/S0092-8674(21)00228-2">SnapShot: Neurobiology of opioid use disorder.</a></div>
+        <div class="publication-journal">Cell, 2021</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Suprun, M., <strong>Ellis, R. J.,</strong> Sampson, H. A. & Suárez-Fariñas, M.</div>
+        <div class="publication-title"><a href="https://academic.oup.com/bioinformatics/article-abstract/37/1/131/6104853">bbeaR: an R package and framework for epitope-specific antibody profiling.</a></div>
+        <div class="publication-journal">Bioinformatics, 2021</div>
+      </li>
+
+      <li>
+        <div class="publication-authors">Gomez, J. L., Bonaventura, J., Keighron, J., Wright, K. M., Marable, D. L., Rodriguez, L. A., Lam, S., Carlton, M. L., <strong>Ellis, R. J.,</strong> Jordan, C. J., Bi, G., Solis, O., Pignatelli, M., Bannon, M. J., Xi, Z.-X., Tanda, G. & Michaelides, M.</div>
+        <div class="publication-title"><a href="https://www.nature.com/articles/s41398-021-01693-0">Synaptic Zn2+ potentiates the effects of cocaine on striatal dopamine neurotransmission and behavior.</a></div>
+        <div class="publication-journal">Translational Psychiatry, 2021</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Egervari, G., Akpoyibo, D., Rahman, T., Fullard, J. F., Callens, J. E., Landry, J. A., Ly, A., Zhou, X., Warren, N., Hauberg, M. E., Hoffman, G., <strong>Ellis, R.</strong>, Ferland, J.-M. N., Miller, M. L., Keller, E., Zhang, B., Roussos, P. & Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://www.nature.com/articles/s41467-020-18114-3">Chromatin accessibility mapping of the striatum identifies tyrosine kinase FYN as a therapeutic target for heroin use disorder.</a></div>
+        <div class="publication-journal">Nature Communications, 2020</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.,</strong> Wang, Z., Genes, N. & Ma'ayan, A.</div>
+        <div class="publication-title"><a href="https://biodatamining.biomedcentral.com/articles/10.1186/s13040-019-0193-0">Predicting opioid dependence from electronic health records with machine learning.</a></div>
+        <div class="publication-journal">BioData Mining, 2019</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Michaelides, M., Miller, M. L., Egervari, G., Primeaux, S. D., Gomez, J. L., <strong>Ellis, R. J.</strong>, Landry, J. A., Szutorisz, H., Hoffman, A. F., Lupica, C. R., Loos, R. J. F., Thanos, P. K., Bray, G. A., Neumaier, J. F., Zachariou, V., Wang, G.-J., Volkow, N. D. & Hurd, Y. L.</div>
+        <div class="publication-title"><a href="https://www.nature.com/articles/s41380-018-0120-7">Striatal Rgs4 regulates feeding and susceptibility to diet-induced obesity.</a></div>
+        <div class="publication-journal">Molecular Psychiatry, 2018</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.</strong> & Michaelides, M.</div>
+        <div class="publication-title"><a href="https://www.biorxiv.org/content/10.1101/271296v1.abstract">High-accuracy Decoding of Complex Visual Scenes from Neuronal Calcium Responses.</a></div>
+        <div class="publication-journal">bioRxiv, 2018</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors"><strong>Ellis, R. J.,</strong> Michaelides, M. & Wang, G.-J.</div>
+        <div class="publication-title"><a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781315119922-3/neurodysfunction-addiction-overeating-assessed-brain-imaging-randall-ellis-michael-michaelides-gene-jack-wang">Neurodysfunction in Addiction and Overeating as Assessed by Brain Imaging.</a></div>
+        <div class="publication-journal">Processed Food Addiction: Foundations, Assessment, and Recovery (CRC Press), 2017</div>
+      </li>
+      
+      <li>
+        <div class="publication-authors">Gomez, J. L., Bonaventura, J., Lesniak, W., Mathews, W. B., Sysa-Shah, P., Rodriguez, L. A., <strong>Ellis, R. J.</strong>, Richie, C. T., Harvey, B. K., Dannals, R. F., Pomper, M. G., Bonci, A. & Michaelides, M.</div>
+        <div class="publication-title"><a href="http://science.sciencemag.org/content/357/6350/503">Chemogenetics revealed: DREADD occupancy and activation via converted clozapine.</a></div>
+        <div class="publication-journal">Science, 2017</div>
+      </li>
+      
+      
+    </ol>
+  </section>
+
+  <section id="services">
+    <h2>Consulting Services</h2>
+    <div class="services-grid">
+      <div class="service">Machine Learning for Biology</div>
+      <div class="service">Alzheimer's biomarker development</div>
+      <div class="service">Biobank-scale Analysis</div>
+      <div class="service">Bioinformatics Pipeline Development</div>
+      <div class="service">Statistical Modeling & Analysis</div>
+      <div class="service">Data Visualization & Reporting</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Collaborate</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Tell me about your project or research needs..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Randall J. Ellis • Computational Biology & Consulting
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 60,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#3b82f6", "#64748b", "#e2e8f0"]
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 0.2,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.05,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 2,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#3b82f6",
+          "opacity": 0.15,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.5
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+    // Add scroll effect to navigation
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.style.background = 'rgba(255,255,255,0.98)';
+      } else {
+        nav.style.background = 'rgba(255,255,255,0.95)';
+      }
+    });
+  </script>
+</body>
+</html>
